@@ -64,8 +64,7 @@ function EditForm({ onChange, showLoaders, values }) {
                 id: 'users-permissions.EditForm.inputToggle.label.sign-up',
               }}
               inputDescription={{
-                id:
-                  'users-permissions.EditForm.inputToggle.description.sign-up',
+                id: 'users-permissions.EditForm.inputToggle.description.sign-up',
               }}
               name="advanced.settings.allow_register"
               onChange={onChange}
@@ -75,27 +74,24 @@ function EditForm({ onChange, showLoaders, values }) {
             <div className="col-6"></div>
             <Input
               label={{
-                id:
-                  'users-permissions.EditForm.inputToggle.label.email-reset-password',
+                id: 'users-permissions.EditForm.inputToggle.label.email-reset-password',
               }}
               inputDescription={{
-                id:
-                  'users-permissions.EditForm.inputToggle.description.email-reset-password',
+                id: 'users-permissions.EditForm.inputToggle.description.email-reset-password',
               }}
               name="advanced.settings.email_reset_password"
               onChange={onChange}
+              placeholder="ex: https://yourfrontend.com/reset-password"
               type="text"
               value={get(settings, 'email_reset_password')}
             />
             <div className="col-6"></div>
             <Input
               label={{
-                id:
-                  'users-permissions.EditForm.inputToggle.label.email-confirmation',
+                id: 'users-permissions.EditForm.inputToggle.label.email-confirmation',
               }}
               inputDescription={{
-                id:
-                  'users-permissions.EditForm.inputToggle.description.email-confirmation',
+                id: 'users-permissions.EditForm.inputToggle.description.email-confirmation',
               }}
               name="advanced.settings.email_confirmation"
               onChange={onChange}
@@ -105,8 +101,7 @@ function EditForm({ onChange, showLoaders, values }) {
             <div className="col-6"></div>
             <Input
               label={{
-                id:
-                  'users-permissions.EditForm.inputToggle.label.email-confirmation-redirection',
+                id: 'users-permissions.EditForm.inputToggle.label.email-confirmation-redirection',
               }}
               inputDescription={{
                 id:
@@ -115,6 +110,7 @@ function EditForm({ onChange, showLoaders, values }) {
               name="advanced.settings.email_confirmation_redirection"
               onChange={onChange}
               type="text"
+              placeholder="ex: https://yourfrontend.com/confirmation/success"
               value={get(settings, 'email_confirmation_redirection')}
             />
           </div>
